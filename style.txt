@@ -1,0 +1,26 @@
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #ff8000;
+    border-radius: .25rem;
+}
+.warning-rib{
+	position: relative;
+	border: 1px solid red;
+	background: rgba(255,0,0,0.3);
+	/* font-weight: 700; */
+}
+.warning-rib:after{
+    content: url("data:image/svg+xml,%3Csvg fill='yellow' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 1l-12 22h24l-12-22zm-1 8h2v7h-2v-7zm1 11.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z'/%3E%3C/svg%3E");
+	position: absolute;
+	top:10px;
+	right: 5px;
+}
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+    margin-left: -3px;
+    content: "";
+    border-width: 5px 5px 0;
+    border-top-color: #ff8000;
+}
